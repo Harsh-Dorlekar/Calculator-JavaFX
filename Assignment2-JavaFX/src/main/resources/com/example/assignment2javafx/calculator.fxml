@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.assignment2javafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label text="Excel Functions">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" prefHeight="20.0" prefWidth="288.0" text="Enter comma separated values">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="inputValues" />
+    <HBox alignment="CENTER" prefHeight="0.0" prefWidth="435.0" spacing="20.0">
+        <children>
+            <RadioButton fx:id="addButton" contentDisplay="CENTER" mnemonicParsing="false" text="Add" textAlignment="CENTER">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="averageButton" mnemonicParsing="false" text="Average">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="maximumButton" mnemonicParsing="false" text="Maximum">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="minimumButton" mnemonicParsing="false" text="Minimum" textAlignment="CENTER">
+                <font>
+                    <Font size="13.0" />
+                </font>
+            </RadioButton>
+        </children>
+        <padding>
+            <Insets bottom="5.0" top="5.0" />
+        </padding>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="38.0" prefWidth="435.0" spacing="60.0">
+        <children>
+            <Button onAction="#onHelloButtonClick" text="Calculate!" />
+            <Button fx:id="clearButton" onAction="#onClearButtonClick" text="Clear" />
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="37.0" prefWidth="435.0">
+        <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="95.0" text="Result:">
+                <padding>
+                    <Insets bottom="5.0" top="5.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+
+            <Label fx:id="welcomeText" contentDisplay="CENTER" prefHeight="18.0" prefWidth="157.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+        </children>
+    </HBox>
+</VBox>
